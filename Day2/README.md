@@ -12,6 +12,7 @@ It requires inputs in **ng/µl** and **µl**.
 ### Expected Result
 - Stock: 25.00 µl
 - Diluent: 475.00 µl
+- Total: 500.00 µl
 
 AI prompt (for Gemini): 
 > Write a linear Python script for a biochemistry lab to calculate dilutions using C1V1=C2​V2, forcing all inputs to be in ng/µl and µl, and outputting a simple 3-line protocol (Stock, Diluent, Total) using f-strings rounded to 2 decimal places.
