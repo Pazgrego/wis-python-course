@@ -10,8 +10,8 @@ c2 = float(input("Enter Target Concentration (ng/ul): "))
 v2 = float(input("Enter Final Desired Volume (ul): "))
 
 # Calculation: V1 = (C2 * V2) / C1
-  v1 = (c2 * v2) / c1
-  diluent = v2 - v1
+v1 = (c2 * v2) / c1
+diluent = v2 - v1
 
 print(f"Stock:   {v1} ul")
 print(f"Diluent: {diluent} ul")
