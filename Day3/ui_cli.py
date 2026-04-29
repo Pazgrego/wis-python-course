@@ -2,7 +2,7 @@ import sys
 from logic import calculate_dilution
 
 if len(sys.argv) != 4:
-    print("Usage: python ui_cli.py <C1> <C2> <V2>")
+    print("run the command with <C1> <C2> <V2>")
     print("  C1  — stock concentration")
     print("  C2  — desired concentration")
     print("  V2  — final volume (ul)")

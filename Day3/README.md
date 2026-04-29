@@ -152,10 +152,3 @@ test_logic.py::test_very_large_dilution_factor      PASSED
 | Initial script | *"Write a linear Python script for a biochemistry lab to calculate dilutions using C1V1=C2V2, forcing all inputs to be in ng/µl and µl, and outputting a simple 3-line protocol (Stock, Diluent, Total) using f-strings rounded to 2 decimal places."* |
 | Refactor to module | *"Refactor the script so the calculation lives in a pure function `calculate_dilution(c1, c2, v2)` in `logic.py`, then create three separate UI files: `ui_input.py` (interactive prompts), `ui_cli.py` (sys.argv arguments), and `ui_gui.py` (tkinter window)."* |
 | Add tests & docs | *"Add automated tests using pytest with at least 3–4 known-truth cases and at least one edge case. Also create a comprehensive README and a .gitignore."* |
-
-### How AI helped
-
-- **Separation of concerns** — AI suggested extracting the pure math into `logic.py` so all three UIs could import the same function without duplicating logic.
-- **Edge-case identification** — AI identified the physically impossible case (`C1 = 0`) and added a test that asserts `ZeroDivisionError` is raised, rather than silently returning garbage.
-- **pytest idioms** — AI used `pytest.approx` for all floating-point comparisons instead of `==`, avoiding brittle tests caused by floating-point rounding.
-- **Documentation structure** — AI generated this README, including the formula table, usage examples with expected output, and the AI-collaboration section itself.
