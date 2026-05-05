@@ -29,19 +29,6 @@ This is an everyday calculation in molecular biology, genomics, and any wet-lab 
 
 ---
 
-## File Structure
-
-```
-Day4/
-├── logic.py          # Core calculation (calculate_dilution)
-├── ui_input.py       # Interactive prompt interface
-├── ui_cli.py         # Command-line argument interface
-├── ui_gui.py         # Tkinter graphical interface
-└── test_logic.py     # Automated tests (pytest)
-```
-
----
-
 ## Installation
 
 Python 3.8+ is required. No third-party packages are needed for the core logic or CLI.
